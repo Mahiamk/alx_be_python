@@ -2,7 +2,6 @@
 
 class BankAccount:
     def __init__(self, initial_balance=0):
-        # Private attribute to store balance
         self.__account_balance = initial_balance
 
     def deposit(self, amount):
@@ -24,5 +23,5 @@ class BankAccount:
             return True
 
     def display_balance(self):
-        """Display the current balance."""
-        print(f"Current Balance: ${self.__account_balance}")
+        """Display the current balance with two decimal places."""
+        print(f"Current Balance: ${self.__account_balance:.2f}")
